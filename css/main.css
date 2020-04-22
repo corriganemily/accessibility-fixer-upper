@@ -40,10 +40,6 @@ a:hover {
   color: #113c00;
 }
 
-.nav a:hover .nav a:focus {
-  outline: 3px solid #000;
-}
-
 .about {
   position: relative;
 }
@@ -87,8 +83,30 @@ td {
   color: #fff;
 }
 
-.underline {
-  text-decoration: underline;
+.skip-links {
+  position: absolute;
+  top: -3em;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.skip-links a:focus {
+  top: 0;
+}
+
+nav a:focus {
+  outline: 3px solid #000;
+}
+
+a:focus {
+  outline: 3px solid #000;
+}
+
+.nav a:hover,
+.nav a:focus {
+  background-color: #fff;
+  color: #113c00;
 }
 
 @media only screen and (min-width: 35em) {
